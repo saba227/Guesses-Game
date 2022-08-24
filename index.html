@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form>
+        <label for="level">Choose level:</label>
+            <select name="level" id="level">
+            <option value="10">easy</option>
+            <option value="7">hard</option>
+            <option value="5">expert</option>
+        </select>
+        <input id="levelSubmit" type="button" value="submit">
+    </form>
+    <div class="guesesGame">
+        <h2 class="instruction">Guess number from 1 to 100<br>You have <span id="inst"></span> try</h2>
+        <div class="cont">
+            <div class="form">
+                <input type="text" class="guessField">
+                <input type="submit" value="submit" class="guessSubmit">
+            </div>
+
+            <div class="resultParas">
+                <p class="guesses">Previous guesses:</p>
+                <p class="lowOrHi">Number is:</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
